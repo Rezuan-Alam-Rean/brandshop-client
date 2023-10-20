@@ -1,4 +1,5 @@
 import Banner from "../Banner/Banner";
+import Recomended from "../Gallary/Recomended";
 import Upcoming from "../Gallary/Upcoming";
 
 
@@ -8,6 +9,8 @@ const Home = () => {
             <Banner></Banner>
 
                 reanme
+
+                <Recomended></Recomended>
 
                 <Upcoming></Upcoming>
 
