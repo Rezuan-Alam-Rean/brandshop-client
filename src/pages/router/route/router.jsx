@@ -8,6 +8,7 @@ import Home from "../../Home/Home/Home";
 import Login from "../../Home/Login/Login";
 import Registration from "../../Home/Registration/Registration";
 import MyCart from "../../MyCart/MyCart";
+import PrivetRoute from "../PrivetRoute/PrivetRoute";
 
 
 
@@ -25,7 +26,7 @@ import MyCart from "../../MyCart/MyCart";
        
         {
             path:'/addProduct',
-            element:<AddProduct></AddProduct>
+            element:<PrivetRoute><AddProduct></AddProduct></PrivetRoute>
         },
         {
             path:'/MyCart',

@@ -11,13 +11,15 @@ const Navbar = () => {
       <li>
         <Link className=" font-bold" to="/">Home</Link>
       </li>
+
+      <li><Link to="/addProduct" className=" font-bold">Add Product</Link></li>
+
       
       {user && <>  <li>
         {" "}
         <Link to="/MyCart" className=" font-bold">My Cart</Link>
       </li>
        
-      <li><Link to="/addProduct" className=" font-bold">Add Product</Link></li>
        
         </>}
       
