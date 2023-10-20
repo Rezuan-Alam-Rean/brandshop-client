@@ -7,6 +7,7 @@ import AddProduct from "../../AddProducts/AddProduct";
 import Home from "../../Home/Home/Home";
 import Login from "../../Home/Login/Login";
 import Registration from "../../Home/Registration/Registration";
+import MyCart from "../../MyCart/MyCart";
 
 
 
@@ -25,6 +26,10 @@ import Registration from "../../Home/Registration/Registration";
         {
             path:'/addProduct',
             element:<AddProduct></AddProduct>
+        },
+        {
+            path:'/MyCart',
+            element:<MyCart></MyCart>
         },
       
         {

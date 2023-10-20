@@ -11,18 +11,16 @@ const Navbar = () => {
       <li>
         <Link className=" font-bold" to="/">Home</Link>
       </li>
-      <li>
-        <Link to="/allToys" className=" font-bold">All Toys</Link>
-      </li>
+      
       {user && <>  <li>
         {" "}
-        <Link to="/myToys" className=" font-bold">My Toys</Link>
+        <Link to="/MyCart" className=" font-bold">My Cart</Link>
       </li>
        
       <li><Link to="/addProduct" className=" font-bold">Add Product</Link></li>
        
         </>}
-      <li><Link to="/blog" className=" font-bold">Blogs</Link></li>
+      
     </>
   );
   const handleLogOut = () => {
