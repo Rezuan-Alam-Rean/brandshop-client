@@ -1,4 +1,4 @@
-
+import logo from "../../../../assets/logo.jpg"
 import { Link } from "react-router-dom";
 import './Navbar.css'
 import { useContext } from "react";
@@ -65,6 +65,7 @@ const Navbar = () => {
             {navItems}
           </ul>
         </div>
+        <img src={logo} style={{ width: "80px" }} />
 
 
         {/* <Link className=" normal-case text-2xl font-bold">Speedy-Racer-Toys</Link> */}
