@@ -1,0 +1,219 @@
+[
+    {
+      "id": "1",
+      "Image": "image1.jpg",
+      "Name": "iPhone 13",
+      "Band Name": "Apple",
+      "Type": "Mobile",
+      "Price": 499.99,
+      "Rating": 4.5
+    },
+    {
+      "id": "2",
+      "Image": "image2.jpg",
+      "Name": "iPhone 12 Pro",
+      "Band Name": "Apple",
+      "Type": "Mobile",
+      "Price": 599.99,
+      "Rating": 4.2
+    },
+    {
+      "id": "3",
+      "Image": "image3.jpg",
+      "Name": "iPhone SE",
+      "Band Name": "Apple",
+      "Type": "Mobile",
+      "Price": 699.99,
+      "Rating": 4.8
+    },
+    {
+      "id": "4",
+      "Image": "image4.jpg",
+      "Name": "iPhone 11",
+      "Band Name": "Apple",
+      "Type": "Mobile",
+      "Price": 449.99,
+      "Rating": 4.0
+    },
+    {
+      "id": "5",
+      "Image": "samsung1.jpg",
+      "Name": "Samsung Galaxy S21",
+      "Band Name": "Samsung",
+      "Type": "Mobile",
+      "Price": 599.99,
+      "Rating": 4.4
+    },
+    {
+      "id": "6",
+      "Image": "samsung2.jpg",
+      "Name": "Samsung Galaxy Note 20",
+      "Band Name": "Samsung",
+      "Type": "Mobile",
+      "Price": 699.99,
+      "Rating": 4.2
+    },
+    {
+      "id": "7",
+      "Image": "samsung3.jpg",
+      "Name": "Samsung Galaxy A72",
+      "Band Name": "Samsung",
+      "Type": "Mobile",
+      "Price": 399.99,
+      "Rating": 4.6
+    },
+    {
+      "id": "8",
+      "Image": "samsung4.jpg",
+      "Name": "Samsung Galaxy Z Fold 3",
+      "Band Name": "Samsung",
+      "Type": "Mobile",
+      "Price": 1799.99,
+      "Rating": 4.8
+    },
+    {
+      "id": "9",
+      "Image": "google1.jpg",
+      "Name": "Google Pixel 6",
+      "Band Name": "Google",
+      "Type": "Mobile",
+      "Price": 699.99,
+      "Rating": 4.3
+    },
+    {
+      "id": "10",
+      "Image": "google2.jpg",
+      "Name": "Google Pixel 6 Pro",
+      "Band Name": "Google",
+      "Type": "Mobile",
+      "Price": 799.99,
+      "Rating": 4.5
+    },
+    {
+      "id": "11",
+      "Image": "google3.jpg",
+      "Name": "Google Pixel 5a",
+      "Band Name": "Google",
+      "Type": "Mobile",
+      "Price": 399.99,
+      "Rating": 4.0
+    },
+    {
+      "id": "12",
+      "Image": "google4.jpg",
+      "Name": "Google Pixel 4a",
+      "Band Name": "Google",
+      "Type": "Mobile",
+      "Price": 349.99,
+      "Rating": 4.1
+    },
+    {
+      "id": "13",
+      "Image": "huawei1.jpg",
+      "Name": "Huawei P50 Pro",
+      "Band Name": "Huawei",
+      "Type": "Mobile",
+      "Price": 799.99,
+      "Rating": 4.3
+    },
+    {
+      "id": "14",
+      "Image": "huawei2.jpg",
+      "Name": "Huawei Mate 40",
+      "Band Name": "Huawei",
+      "Type": "Mobile",
+      "Price": 699.99,
+      "Rating": 4.2
+    },
+    {
+      "id": "15",
+      "Image": "huawei3.jpg",
+      "Name": "Huawei Nova 8",
+      "Band Name": "Huawei",
+      "Type": "Mobile",
+      "Price": 449.99,
+      "Rating": 4.0
+    },
+    {
+      "id": "16",
+      "Image": "huawei4.jpg",
+      "Name": "Huawei P40",
+      "Band Name": "Huawei",
+      "Type": "Mobile",
+      "Price": 599.99,
+      "Rating": 4.1
+    },
+    {
+      "id": "17",
+      "Image": "oneplus1.jpg",
+      "Name": "OnePlus 9",
+      "Band Name": "OnePlus",
+      "Type": "Mobile",
+      "Price": 699.99,
+      "Rating": 4.4
+    },
+    {
+      "id": "18",
+      "Image": "oneplus2.jpg",
+      "Name": "OnePlus 9 Pro",
+      "Band Name": "OnePlus",
+      "Type": "Mobile",
+      "Price": 799.99,
+      "Rating": 4.5
+    },
+    {
+      "id": "19",
+      "Image": "oneplus3.jpg",
+      "Name": "OnePlus Nord",
+      "Band Name": "OnePlus",
+      "Type": "Mobile",
+      "Price": 399.99,
+      "Rating": 4.2
+    },
+    {
+      "id": "20",
+      "Image": "oneplus4.jpg",
+      "Name": "OnePlus 8T",
+      "Band Name": "OnePlus",
+      "Type": "Mobile",
+      "Price": 599.99,
+      "Rating": 4.0
+    },
+    {
+      "id": "21",
+      "Image": "xiaomi1.jpg",
+      "Name": "Xiaomi Mi 11",
+      "Band Name": "Xiaomi",
+      "Type": "Mobile",
+      "Price": 599.99,
+      "Rating": 4.3
+    },
+    {
+      "id": "22",
+      "Image": "xiaomi2.jpg",
+      "Name": "Xiaomi Redmi Note 10",
+      "Band Name": "Xiaomi",
+      "Type": "Mobile",
+      "Price": 249.99,
+      "Rating": 4.2
+    },
+    {
+      "id": "23",
+      "Image": "xiaomi3.jpg",
+      "Name": "Xiaomi Poco X3",
+      "Band Name": "Xiaomi",
+      "Type": "Mobile",
+      "Price": 349.99,
+      "Rating": 4.1
+    },
+    {
+      "id": "24",
+      "Image": "xiaomi4.jpg",
+      "Name": "Xiaomi Mi 10T",
+      "Band Name": "Xiaomi",
+      "Type": "Mobile",
+      "Price": 499.99,
+      "Rating": 4.5
+    }
+  ]
+  

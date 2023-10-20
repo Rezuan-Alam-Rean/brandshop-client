@@ -1,6 +1,7 @@
 import Banner from "../Banner/Banner";
 import Recomended from "../Gallary/Recomended";
 import Upcoming from "../Gallary/Upcoming";
+import Brands from "./Brands";
 
 
 const Home = () => {
@@ -8,11 +9,11 @@ const Home = () => {
         <div>
             <Banner></Banner>
 
-                reanme
+               <Brands></Brands> 
 
-                <Recomended></Recomended>
+            <Recomended></Recomended>
 
-                <Upcoming></Upcoming>
+            <Upcoming></Upcoming>
 
         </div>
     );
