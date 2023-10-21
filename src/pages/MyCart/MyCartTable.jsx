@@ -1,30 +1,30 @@
-import Swal from "sweetalert2";
+// import Swal from "sweetalert2";
 
 
 const MyCartTable = ({ c }) => {
     console.log(c);
-    const handleAddtoCart = (d) => {
-        const data = { data: d };
-        fetch(`http://localhost:5000/selectedProduct`, {
-            method: "POST",
-            headers: {
-                "content-type": "application/json",
-            },
-            body: JSON.stringify(data),
-        })
-            .then((res) => res.json())
-            .then((data) => {
-                if (data.insertedId) {
-                    Swal.fire({
-                        title: 'success',
-                        text: 'Success',
-                        icon: 'success',
-                        confirmButtonText: 'Ok'
-                    })
+    // const handleAddtoCart = (d) => {
+    //     const data = { data: d };
+    //     fetch(`http://localhost:5000/selectedProduct`, {
+    //         method: "POST",
+    //         headers: {
+    //             "content-type": "application/json",
+    //         },
+    //         body: JSON.stringify(data),
+    //     })
+    //         .then((res) => res.json())
+    //         .then((data) => {
+    //             if (data.insertedId) {
+    //                 Swal.fire({
+    //                     title: 'success',
+    //                     text: 'Success',
+    //                     icon: 'success',
+    //                     confirmButtonText: 'Ok'
+    //                 })
 
-                }
-            });
-    }
+    //             }
+    //         });
+    // }
     return (
         <div>
             <div>

@@ -37,7 +37,7 @@ const AuthProvider = ({ children }) => {
       photoURL: photo,
     })
       .then(() => {
-        alert("Successfull");
+        console.log("Successfull");
       })
       .catch((error) => {
         console.log(error.message);

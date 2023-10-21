@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import useTitle from "../../../hooks/useTitle";
+import toast from "react-hot-toast";
 
 const Registration = () => {
   useTitle('Registration')
@@ -21,27 +22,46 @@ const Registration = () => {
             const photo =form.photo.value;
             const email =form.email.value;
              const password = form.password.value;
-    
+
+
+
+             if (
+              password.length < 6 ||
+              !/[A-Z]/.test(password) ||
+              !/[!@#$%^&*()_+{}[\]:;<>,.?~\\-]/.test(password)
+            ) {
+              toast.error('Password must be at least 6 characters, contain a capital letter, and have a special character');
+            }
+          
+            else{
+                  
+          
+              createUser(email,password)
+              .then(result=>{
+                  // eslint-disable-next-line no-unused-vars
+                  const loggedUser = result.user;
+                  // console.log(loggedUser);
+                 
+                  updateUserData(result.user,name,photo)
+                  navigate(from, { replace: true })
+                  form.reset()
+                  Swal.fire({
+                      title: 'success!',
+                      text: 'Registration Succesfull',
+                      icon: 'success',
+                      confirmButtonText: 'OK'
+                    })
+              })
+              .catch(error=>{
+                  setError(error.message)
+              })
+              
+                
+          
+            }
+          
             
-            createUser(email,password)
-            .then(result=>{
-                // eslint-disable-next-line no-unused-vars
-                const loggedUser = result.user;
-                // console.log(loggedUser);
-               
-                updateUserData(result.user,name,photo)
-                navigate(from, { replace: true })
-                form.reset()
-                Swal.fire({
-                    title: 'success!',
-                    text: 'Registration Succesfull',
-                    icon: 'success',
-                    confirmButtonText: 'OK'
-                  })
-            })
-            .catch(error=>{
-                setError(error.message)
-            })
+          
             
         }
 
