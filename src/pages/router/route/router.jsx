@@ -31,14 +31,14 @@ import ErrorPage from "../../ErrorPage/ErrorPage";
         {
           path:'/Phonec/:id',
           element:<PrivetRoute> <PhoneCompaly></PhoneCompaly> </PrivetRoute>,
-          loader : ()=> fetch(`/Brands.json`)
+         
 
 
       },
         {
           path:'/update/:id',
           element:<PrivetRoute> <Update></Update></PrivetRoute>,
-          loader : ()=> fetch(`/Brands.json`)
+         
 
 
       },
