@@ -3,7 +3,7 @@ const Upcoming = () => {
     <div className="mb-10 mt-10 ">
       <h1 className="text-5xl font-extrabold text-center">Upcoming Brands ....</h1>
 
-      <div className="grid lg:grid-cols-3 sm:grid-cols-1 opacity-20 mt-10">
+      <div className="grid lg:grid-cols-3 sm:grid-cols-1 opacity-40 mt-10">
         <div className="card card-compact w-96 bg-base-100 shadow-xl mt-5  "
         
         

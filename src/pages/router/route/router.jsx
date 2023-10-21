@@ -9,6 +9,9 @@ import Login from "../../Home/Login/Login";
 import Registration from "../../Home/Registration/Registration";
 import MyCart from "../../MyCart/MyCart";
 import PrivetRoute from "../PrivetRoute/PrivetRoute";
+import PhoneCompaly from "../../Home/PhoneCompany/PhoneCompaly";
+import Update from "../../MyCart/UpdatedCart/Update";
+import ErrorPage from "../../ErrorPage/ErrorPage";
 
 
 
@@ -17,13 +20,28 @@ import PrivetRoute from "../PrivetRoute/PrivetRoute";
     {
       path: "/",
       element: <MainLayout></MainLayout>,
+      errorElement:<ErrorPage></ErrorPage>,
    
       children:[
         {
             path:'/',
             element:<Home></Home>
         },
-       
+        
+        {
+          path:'/Phonec/:id',
+          element:<PrivetRoute> <PhoneCompaly></PhoneCompaly> </PrivetRoute>,
+          loader : ()=> fetch(`/Brands.json`)
+
+
+      },
+        {
+          path:'/update/:id',
+          element:<PrivetRoute> <Update></Update></PrivetRoute>,
+          loader : ()=> fetch(`/Brands.json`)
+
+
+      },
         {
             path:'/addProduct',
             element:<PrivetRoute><AddProduct></AddProduct></PrivetRoute>

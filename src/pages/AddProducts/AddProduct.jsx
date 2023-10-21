@@ -12,9 +12,9 @@ const AddProduct = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     
     const onSubmit = data => {
-      const price = Number(data.price);
-      data.price =price
-        fetch("", {
+     
+     
+        fetch("http://localhost:5000/post/product", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),
