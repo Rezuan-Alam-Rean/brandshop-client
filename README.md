@@ -11,6 +11,6 @@
 
 ## Live Site Link
 
-  - **Client Site Live Link**:
- - **server  Site Link**: 
+  - **Client Site Live Link**: https://brands-shop.web.app/
+ 
             
