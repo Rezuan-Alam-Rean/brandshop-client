@@ -14,7 +14,7 @@ const AddProduct = () => {
     const onSubmit = data => {
      
      
-        fetch("http://localhost:5000/post/product", {
+        fetch("https://shop-server-8r7smwjyo-rezuan-alam-reans-projects.vercel.app/post/product", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),

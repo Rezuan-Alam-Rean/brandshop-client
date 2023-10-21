@@ -8,7 +8,7 @@ const BrandCart = ({ b }) => {
     return (
 
 
-        <Link to={`/Phonec/${b?.id}`} >
+        <Link to={`/Phonec/${b?._id}`} >
 
             <div className="card card-compact w-96 bg-base-100 shadow-xl  ">
 

@@ -9,7 +9,7 @@ const Brands = () => {
 
     useEffect(() => {
 
-        fetch(`/Brands.json`)
+        fetch(`https://shop-server-8r7smwjyo-rezuan-alam-reans-projects.vercel.app/products`)
             .then(res => res.json())
             .then(data => setBrands(data))
 
@@ -17,7 +17,7 @@ const Brands = () => {
 
     }, [])
    
-
+console.log(brands);
 
 
 

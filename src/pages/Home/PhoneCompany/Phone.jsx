@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 const Phone = ({ d }) => {
     const handleAddToCart = (d) => {
         const data = { data: d };
-        fetch(`http://localhost:5000/selectedProduct`, {
+        fetch(`https://shop-server-8r7smwjyo-rezuan-alam-reans-projects.vercel.app/selectedProduct`, {
             method: "POST",
             headers: {
                 "content-type": "application/json",
@@ -32,13 +32,13 @@ const Phone = ({ d }) => {
         <div>
             <div className="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure><img src={d?.Image} alt="Shoes" /></figure>
-                <div className="card-body">
-                    
+                <div className="card-body  items-center">
+
                     <h2 className="card-title">{d?.Name}</h2>
 
                     <p>{d?.BandName}</p>
 
-                    <p>{d?.Price}</p>
+                    <p> price :{d?.Price} $</p>
 
                     <div className="rating">
                         <input type="radio" name="rating-1" className="mask mask-star" />
@@ -48,8 +48,8 @@ const Phone = ({ d }) => {
                         <input type="radio" name="rating-1" className="mask mask-star" />
                     </div>
 
-                    <div className="card-actions flex justify-evenly">
-                        <button className="btn btn-primary">Details </button>
+                    <div className="card-actions flex justify-evenly gap-20">
+                       
                         <Link to="/addProduct"><button className="btn btn-primary">Update</button></Link>
                         <button onClick={() => handleAddToCart(d)} className="btn btn-primary">Add Cart</button>
                     </div>

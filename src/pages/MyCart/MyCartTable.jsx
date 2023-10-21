@@ -1,36 +1,18 @@
 // import Swal from "sweetalert2";
 
+import { Link } from "react-router-dom";
 
-const MyCartTable = ({ c }) => {
-    console.log(c);
-    // const handleAddtoCart = (d) => {
-    //     const data = { data: d };
-    //     fetch(`http://localhost:5000/selectedProduct`, {
-    //         method: "POST",
-    //         headers: {
-    //             "content-type": "application/json",
-    //         },
-    //         body: JSON.stringify(data),
-    //     })
-    //         .then((res) => res.json())
-    //         .then((data) => {
-    //             if (data.insertedId) {
-    //                 Swal.fire({
-    //                     title: 'success',
-    //                     text: 'Success',
-    //                     icon: 'success',
-    //                     confirmButtonText: 'Ok'
-    //                 })
 
-    //             }
-    //         });
-    // }
+
+const MyCartTable = ({ c,handleDelete }) => {
+    console.log(c?._id);
+  
     return (
         <div>
             <div>
                 <div className="card card-compact w-96 bg-base-100 shadow-xl">
                     <figure><img src= {c?.data.Image} alt="Shoes" /></figure>
-                    <div className="card-body">
+                    <div className="card-body items-center">
 
 
                        
@@ -39,7 +21,7 @@ const MyCartTable = ({ c }) => {
          
                                   <p>{c?.data.BandName}</p>
 
-                                     <p>{c?.data.Price}</p>
+                                     <p>Price :{c?.data.Price} $</p>
                       
 
                         <div className="rating">
@@ -50,9 +32,11 @@ const MyCartTable = ({ c }) => {
                             <input type="radio" name="rating-1" className="mask mask-star" />
                         </div>
 
-                        <div className="card-actions flex justify-evenly">
-                            <button className="btn btn-primary">Delete </button>
-                            <button  className="btn btn-primary">update</button>
+                        <div className="card-actions flex justify-evenly gap-20">
+                            <button onClick={()=>handleDelete(c?._id)} className="btn btn-primary">Delete </button>
+
+                            <Link to="/addProduct" >  <button  className="btn btn-primary">update</button>    </Link>
+                            
                             
                         </div>
                     </div>
