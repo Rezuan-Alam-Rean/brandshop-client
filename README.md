@@ -1,3 +1,20 @@
+# Brand Shop
+
+## Project Description
+Brand Shop is an online platform dedicated to selling phones from a wide array of brands. It provides customers with a convenient and reliable avenue to explore and purchase smartphones from their favorite manufacturers. The platform offers a seamless shopping experience, showcasing the latest models and ensuring customer satisfaction through quality service.
+
+
+
+
+## Technology
+This project utilizes a variety of technologies, including:
+
+- **React**: Frontend framework for building the user interface.
+- **Node.js**: Backend JavaScript runtime environment.
+- **Express**: Web application framework for Node.js used in the backend.
+- **MongoDB**: NoSQL database for storing building-related data.
+- **TailwindCSS**: Frontend component library for responsive design.
+- **Firebase Authentication**: User authentication and authorization.
 
 ## Features
 - **Home**: Users can see amazing brands .If user want to see  phone you can click view brands to see its information.User also see catagory wise brand in this page.
