@@ -28,6 +28,6 @@ This project utilizes a variety of technologies, including:
 
 ## Live Site Link
 
-  - **Client Site Live Link**: https://brands-shop.web.app/
+  - **Client Site Live Link**: https://brandshop-client.vercel.app/
  
             
